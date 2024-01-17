@@ -14,9 +14,7 @@ def login():
       print("Success")
       break
     else:
-      print("I don't recognize that username or password")
-      continue
-
+      print("I don't recognize that username or password. Try again")
 def rollDice(side):
   result = random.randint(1,side)
   return result
@@ -35,6 +33,7 @@ while True:
     login()
   elif menu == 2:
     register()
+    login()
   else:
     print("Please submit valid response")
     continue
