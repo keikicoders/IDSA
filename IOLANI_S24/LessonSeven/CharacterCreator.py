@@ -5,6 +5,7 @@ password = ''
 def register():
     username = input("Create a username: ")
     password = input("Create a password: ")
+    print('Thank you for creating your account. You will be prompted to enter your credentials.')
 
 def login():
   while True:
